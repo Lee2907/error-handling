@@ -14,6 +14,8 @@ def check():
             messagebox.showerror("Notice","Please deposit more funds for this excursion.")
        else:
             messagebox.showinfo("Yippeee!!!","You qualify for the Malaysia trip. Congratulations!")
+    except ValueError:
+        messagebox.showerror("Notice","Please enter a number.")
 
 l_1 = Label(money, text="Please enter money in your account: ")
 l_1.place(x=5, y=5)
