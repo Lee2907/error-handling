@@ -31,7 +31,7 @@ def membership():
         if usernameEntry.get()==names[x] and passwordEntry.get()==passwords[x]:
             found=True
     if found==True:
-        messagebox.showinfo("ACCESS INFO", "ACCESS GRANTED")
+        messagebox.showinfo("Note", "Access Granted")
         root.destroy()
         import mains
     else:
